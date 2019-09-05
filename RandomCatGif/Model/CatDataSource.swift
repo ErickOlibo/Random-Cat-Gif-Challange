@@ -21,7 +21,6 @@ class CatDataSource: NSObject, UITableViewDataSource {
         decoder.dateDecodingStrategy = .iso8601
         decoder.decodeJSON([Cat].self, fromURL: url) { cats in
             self.cats = cats
-            print(cats.count)
             self.dataChanged?()
 
         }
