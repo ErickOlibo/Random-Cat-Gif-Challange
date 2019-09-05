@@ -15,25 +15,39 @@ class CatGifViewController: UITableViewController {
         super.viewDidLoad()
         
         refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
-        dataSource.dataChanged = { [weak self] in
-            self?.tableView.reloadData()
-            
-        }
+        setupRefreshController()
+        loadDataSource()
+
+    }
+    
+    
+    // MARK: - RefreshController Setup
+    private func setupRefreshController() {
         
+        refreshControl?.tintColor = .red
+        let attributes = [NSAttributedString.Key.foregroundColor : UIColor.red]
+        refreshControl?.attributedTitle = NSAttributedString(string: "Fetching more Cats...", attributes: attributes)
+    }
+    
+    
+    
+    // MARK: - DataSource loading
+    private func loadDataSource() {
         let urlQuery = TheCatAPI().urlQuery()
         dataSource.fetch(urlQuery)
         tableView.dataSource = dataSource
-
+        dataSource.dataChanged = { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
     
     
     // MARK: - Refresh
     @objc private func refresh() {
-        let urlQuery = TheCatAPI().urlQuery()
-        dataSource.fetch(urlQuery)
-        tableView.dataSource = dataSource
+        loadDataSource()
         refreshControl?.endRefreshing()
     }
+    
     
     // MARK: - Navigation
     
