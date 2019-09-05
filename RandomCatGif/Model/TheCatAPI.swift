@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Properties
+// MARK: - Properties
 private let apiKey = "a9f502f7-73c8-4284-a5ad-37efdc9dc2f7"
 private let userID = "jhi37r"
 private let address = "https://api.thecatapi.com/v1/images/search?"

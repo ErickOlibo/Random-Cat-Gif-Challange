@@ -8,9 +8,12 @@
 
 import UIKit
 
-class CatDataSource: NSObject {
+class CatDataSource: NSObject, UITableViewDataSource {
     
+    // MARK: - Properties
+    private let cellIdentifier = "CatGifCell"
     var cats = [Cat]()
+    var dataChanged: (() -> Void)?
     
     func fetch(_ urlString: String) {
         let decoder = JSONDecoder()
@@ -18,10 +21,23 @@ class CatDataSource: NSObject {
         decoder.dateDecodingStrategy = .iso8601
         decoder.decodeJSON([Cat].self, fromURL: url) { cats in
             self.cats = cats
-            for cat in cats {
-                print("id: \(cat.id)")
-            }
+            print(cats.count)
+            self.dataChanged?()
+
         }
-        
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cats.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CatGifCell
+        let cat = cats[indexPath.row]
+        cell.catID.text = cat.id
+        cell.catName.text = "This is it"
+        return cell
+    }
+    
+    
 }

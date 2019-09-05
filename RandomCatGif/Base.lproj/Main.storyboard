@@ -9,23 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Cat Gif View Controller-->
         <scene sceneID="hvb-0G-9rC">
             <objects>
-                <tableViewController id="Rn5-AL-MKG" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CatGifViewController" id="Rn5-AL-MKG" customClass="CatGifViewController" customModule="RandomCatGif" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HhP-aW-pgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatGifCell" rowHeight="100" id="5wQ-da-Ve4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatGifCell" rowHeight="100" id="5wQ-da-Ve4" customClass="CatGifCell" customModule="RandomCatGif" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5wQ-da-Ve4" id="LHb-fy-HNQ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4v-Of-waJ" userLabel="CatThumbnail">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_img" translatesAutoresizingMaskIntoConstraints="NO" id="D4v-Of-waJ" userLabel="CatThumbnail">
                                             <rect key="frame" x="10" y="10" width="80" height="80"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="80" id="DBB-Wo-dja"/>
@@ -38,8 +38,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erT-Cg-ggc" userLabel="CatID">
-                                            <rect key="frame" x="100" y="58.5" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CatID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erT-Cg-ggc" userLabel="CatID">
+                                            <rect key="frame" x="100" y="58.5" width="43" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -51,11 +51,17 @@
                                         <constraint firstItem="D4v-Of-waJ" firstAttribute="leading" secondItem="LHb-fy-HNQ" secondAttribute="leading" constant="10" id="Qe1-nS-sge"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="26Y-fX-8Dz" secondAttribute="trailing" constant="20" id="RYs-Rd-067"/>
                                         <constraint firstItem="erT-Cg-ggc" firstAttribute="leading" secondItem="D4v-Of-waJ" secondAttribute="trailing" constant="10" id="T4v-wZ-ir1"/>
+                                        <constraint firstItem="erT-Cg-ggc" firstAttribute="top" secondItem="26Y-fX-8Dz" secondAttribute="bottom" constant="17.5" id="V6p-Pm-T3o"/>
                                         <constraint firstAttribute="bottom" secondItem="erT-Cg-ggc" secondAttribute="bottom" constant="20" id="WbX-CP-oqM"/>
                                         <constraint firstItem="26Y-fX-8Dz" firstAttribute="leading" secondItem="D4v-Of-waJ" secondAttribute="trailing" constant="10" id="hc8-s3-SA0"/>
                                         <constraint firstItem="D4v-Of-waJ" firstAttribute="top" secondItem="LHb-fy-HNQ" secondAttribute="top" constant="10" id="tEk-Do-Mzn"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="catGif" destination="D4v-Of-waJ" id="h2m-H8-o2p"/>
+                                    <outlet property="catID" destination="erT-Cg-ggc" id="iF0-DC-Ijq"/>
+                                    <outlet property="catName" destination="26Y-fX-8Dz" id="cVO-z8-kvE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -107,6 +113,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cat_img" width="80" height="80"/>
         <image name="cat_tab" width="25" height="25"/>
     </resources>
 </document>

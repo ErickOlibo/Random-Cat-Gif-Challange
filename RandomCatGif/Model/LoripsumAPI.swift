@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Properties
+// MARK: - Properties
 private let address = "https://loripsum.net/api/"
 
 public enum LoripSize: String, CaseIterable {
