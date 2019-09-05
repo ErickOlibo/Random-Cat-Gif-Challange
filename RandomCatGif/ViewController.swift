@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let dataSource = CatDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
          print(TheCatAPI().urlQuery())
+        dataSource.fetch(TheCatAPI().urlQuery())
     
         // Do any additional setup after loading the view.
     }
