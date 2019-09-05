@@ -17,13 +17,13 @@ class ViewController: UIViewController {
 //         print(TheCatAPI().urlQuery())
 //        dataSource.fetch(TheCatAPI().urlQuery())
         
-        let loremAPI = LoripsumAPI()
-        let urlString = loremAPI.urlQuery(quantity: 5, textLength: .medium)
-        loremAPI.fetch(urlString) { contents in
-            for text in contents {
-                print("-> \(text)")
-            }
-        }
+//        let loremAPI = LoripsumAPI()
+//        let urlString = loremAPI.urlQuery(quantity: 5, textLength: .medium)
+//        loremAPI.fetch(urlString) { contents in
+//            for text in contents {
+//                print("-> \(text)")
+//            }
+//        }
     
         // Do any additional setup after loading the view.
     }
