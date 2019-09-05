@@ -10,11 +10,11 @@ import Foundation
 
 struct Cat: Codable {
     
-    let breeds: [String]
+    let breeds: [Breed]
     let height: Int
     let width: Int
     let id: String
     let url: String
-    let categories: Categories?
+    let categories: [Category]?
     
 }

@@ -16,7 +16,8 @@
 		A73D27CC2320EEFF009B0CE4 /* TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27CB2320EEFF009B0CE4 /* TheCatAPI.swift */; };
 		A73D27CF2320F8C6009B0CE4 /* JSONDecoder-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */; };
 		A73D27D12320FD11009B0CE4 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D02320FD11009B0CE4 /* Cat.swift */; };
-		A73D27D32320FE73009B0CE4 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D22320FE73009B0CE4 /* Categories.swift */; };
+		A73D27D32320FE73009B0CE4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D22320FE73009B0CE4 /* Category.swift */; };
+		A73D27D523210187009B0CE4 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D423210187009B0CE4 /* Breed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,8 @@
 		A73D27CB2320EEFF009B0CE4 /* TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPI.swift; sourceTree = "<group>"; };
 		A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder-Extension.swift"; sourceTree = "<group>"; };
 		A73D27D02320FD11009B0CE4 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
-		A73D27D22320FE73009B0CE4 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		A73D27D22320FE73009B0CE4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A73D27D423210187009B0CE4 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,8 @@
 			children = (
 				A73D27CB2320EEFF009B0CE4 /* TheCatAPI.swift */,
 				A73D27D02320FD11009B0CE4 /* Cat.swift */,
-				A73D27D22320FE73009B0CE4 /* Categories.swift */,
+				A73D27D22320FE73009B0CE4 /* Category.swift */,
+				A73D27D423210187009B0CE4 /* Breed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,11 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73D27CF2320F8C6009B0CE4 /* JSONDecoder-Extension.swift in Sources */,
+				A73D27D523210187009B0CE4 /* Breed.swift in Sources */,
 				A73D27AA2320EB6F009B0CE4 /* ViewController.swift in Sources */,
 				A73D27D12320FD11009B0CE4 /* Cat.swift in Sources */,
 				A73D27CC2320EEFF009B0CE4 /* TheCatAPI.swift in Sources */,
 				A73D27A82320EB6F009B0CE4 /* AppDelegate.swift in Sources */,
-				A73D27D32320FE73009B0CE4 /* Categories.swift in Sources */,
+				A73D27D32320FE73009B0CE4 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
