@@ -13,6 +13,10 @@
 		A73D27AF2320EB6F009B0CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73D27AE2320EB6F009B0CE4 /* Assets.xcassets */; };
 		A73D27B22320EB6F009B0CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73D27B02320EB6F009B0CE4 /* LaunchScreen.storyboard */; };
 		A73D27BD2320EB6F009B0CE4 /* RandomCatGifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27BC2320EB6F009B0CE4 /* RandomCatGifTests.swift */; };
+		A73D27CC2320EEFF009B0CE4 /* TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27CB2320EEFF009B0CE4 /* TheCatAPI.swift */; };
+		A73D27CF2320F8C6009B0CE4 /* JSONDecoder-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */; };
+		A73D27D12320FD11009B0CE4 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D02320FD11009B0CE4 /* Cat.swift */; };
+		A73D27D32320FE73009B0CE4 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D22320FE73009B0CE4 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		A73D27B82320EB6F009B0CE4 /* RandomCatGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomCatGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73D27BC2320EB6F009B0CE4 /* RandomCatGifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCatGifTests.swift; sourceTree = "<group>"; };
 		A73D27BE2320EB6F009B0CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73D27CB2320EEFF009B0CE4 /* TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPI.swift; sourceTree = "<group>"; };
+		A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder-Extension.swift"; sourceTree = "<group>"; };
+		A73D27D02320FD11009B0CE4 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		A73D27D22320FE73009B0CE4 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,13 @@
 		A73D27A62320EB6F009B0CE4 /* RandomCatGif */ = {
 			isa = PBXGroup;
 			children = (
-				A73D27A72320EB6F009B0CE4 /* AppDelegate.swift */,
+				A73D27CD2320F897009B0CE4 /* Helpers */,
+				A73D27C82320EBDD009B0CE4 /* Model */,
+				A73D27C92320EBE5009B0CE4 /* View */,
+				A73D27CA2320EBF2009B0CE4 /* Controller */,
 				A73D27A92320EB6F009B0CE4 /* ViewController.swift */,
 				A73D27AB2320EB6F009B0CE4 /* Main.storyboard */,
-				A73D27AE2320EB6F009B0CE4 /* Assets.xcassets */,
-				A73D27B02320EB6F009B0CE4 /* LaunchScreen.storyboard */,
-				A73D27B32320EB6F009B0CE4 /* Info.plist */,
+				A73D27C72320EB8E009B0CE4 /* Supporting Files */,
 			);
 			path = RandomCatGif;
 			sourceTree = "<group>";
@@ -94,6 +103,49 @@
 				A73D27BE2320EB6F009B0CE4 /* Info.plist */,
 			);
 			path = RandomCatGifTests;
+			sourceTree = "<group>";
+		};
+		A73D27C72320EB8E009B0CE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A73D27A72320EB6F009B0CE4 /* AppDelegate.swift */,
+				A73D27AE2320EB6F009B0CE4 /* Assets.xcassets */,
+				A73D27B02320EB6F009B0CE4 /* LaunchScreen.storyboard */,
+				A73D27B32320EB6F009B0CE4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A73D27C82320EBDD009B0CE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A73D27CB2320EEFF009B0CE4 /* TheCatAPI.swift */,
+				A73D27D02320FD11009B0CE4 /* Cat.swift */,
+				A73D27D22320FE73009B0CE4 /* Categories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A73D27C92320EBE5009B0CE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A73D27CA2320EBF2009B0CE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A73D27CD2320F897009B0CE4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73D27CF2320F8C6009B0CE4 /* JSONDecoder-Extension.swift in Sources */,
 				A73D27AA2320EB6F009B0CE4 /* ViewController.swift in Sources */,
+				A73D27D12320FD11009B0CE4 /* Cat.swift in Sources */,
+				A73D27CC2320EEFF009B0CE4 /* TheCatAPI.swift in Sources */,
 				A73D27A82320EB6F009B0CE4 /* AppDelegate.swift in Sources */,
+				A73D27D32320FE73009B0CE4 /* Categories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +418,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLQ9SH2EFS;
-				INFOPLIST_FILE = RandomCatGif/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomCatGif/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLQ9SH2EFS;
-				INFOPLIST_FILE = RandomCatGif/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomCatGif/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
