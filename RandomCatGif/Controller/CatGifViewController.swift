@@ -13,8 +13,8 @@ class CatGifViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let setName = Set(Constants.catNames)
-//        print(setName)
+        
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
         dataSource.dataChanged = { [weak self] in
             self?.tableView.reloadData()
             
@@ -26,6 +26,14 @@ class CatGifViewController: UITableViewController {
 
     }
     
+    
+    // MARK: - Refresh
+    @objc private func refresh() {
+        let urlQuery = TheCatAPI().urlQuery()
+        dataSource.fetch(urlQuery)
+        tableView.dataSource = dataSource
+        refreshControl?.endRefreshing()
+    }
     
     // MARK: - Navigation
     

@@ -72,6 +72,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="C6x-uv-OFh"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="qWW-Ek-W9W">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Pull to Refresh">
+                                <attributes>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRr-ZF-u7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
