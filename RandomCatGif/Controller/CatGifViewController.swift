@@ -13,6 +13,8 @@ class CatGifViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let setName = Set(Constants.catNames)
+//        print(setName)
         dataSource.dataChanged = { [weak self] in
             self?.tableView.reloadData()
             

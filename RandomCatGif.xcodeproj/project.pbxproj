@@ -23,6 +23,7 @@
 		A73D27DB23211CB1009B0CE4 /* CatGifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DA23211CB1009B0CE4 /* CatGifCell.swift */; };
 		A73D27DE23212714009B0CE4 /* UIImage-Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DD23212714009B0CE4 /* UIImage-Gif.swift */; };
 		A73D27E023212E95009B0CE4 /* CustomAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */; };
+		A73D27E223213BE3009B0CE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27E123213BE3009B0CE4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A73D27DA23211CB1009B0CE4 /* CatGifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGifCell.swift; sourceTree = "<group>"; };
 		A73D27DD23212714009B0CE4 /* UIImage-Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Gif.swift"; sourceTree = "<group>"; };
 		A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatedImageView.swift; sourceTree = "<group>"; };
+		A73D27E123213BE3009B0CE4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */,
 				A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */,
+				A73D27E123213BE3009B0CE4 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A73D27E023212E95009B0CE4 /* CustomAnimatedImageView.swift in Sources */,
 				A73D27CC2320EEFF009B0CE4 /* TheCatAPI.swift in Sources */,
 				A73D27D72321045E009B0CE4 /* CatDataSource.swift in Sources */,
+				A73D27E223213BE3009B0CE4 /* Constants.swift in Sources */,
 				A73D27DE23212714009B0CE4 /* UIImage-Gif.swift in Sources */,
 				A73D27A82320EB6F009B0CE4 /* AppDelegate.swift in Sources */,
 				A73D27D32320FE73009B0CE4 /* Category.swift in Sources */,

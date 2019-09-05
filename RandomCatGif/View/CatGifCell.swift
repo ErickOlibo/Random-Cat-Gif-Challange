@@ -31,28 +31,9 @@ class CatGifCell: UITableViewCell {
             return
         }
         catGif.loadGifUsing(catURL)
-        
-//        DispatchQueue.global().async {
-//            do {
-//                let data = try Data(contentsOf: catURL)
-//
-//
-//
-//            } catch {
-//                print(error.localizedDescription)
-//            }
-//        }
-//
-//
-//        catGif.image = UIImage.gif(url: url)
+
     }
     
-    
 
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
 
 }

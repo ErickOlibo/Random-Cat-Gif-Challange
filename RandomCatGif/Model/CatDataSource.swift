@@ -35,7 +35,7 @@ class CatDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CatGifCell
         let cat = cats[indexPath.row]
         cell.catID.text = cat.id
-        cell.catName.text = "This is it"
+        cell.catName.text = Constants.catNames.randomElement() ?? "N/A"
         cell.url = cat.url
         return cell
     }
