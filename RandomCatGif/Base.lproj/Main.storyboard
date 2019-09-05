@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,6 +62,7 @@
                                     <outlet property="catGif" destination="D4v-Of-waJ" id="b6G-jt-nsH"/>
                                     <outlet property="catID" destination="erT-Cg-ggc" id="iF0-DC-Ijq"/>
                                     <outlet property="catName" destination="26Y-fX-8Dz" id="cVO-z8-kvE"/>
+                                    <segue destination="dMl-Qs-7jO" kind="show" identifier="ToCatDetailVC" id="y7a-ef-qOT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,6 +76,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRr-ZF-u7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3302.898550724638" y="-443.30357142857139"/>
+        </scene>
+        <!--Cat Detail View Controller-->
+        <scene sceneID="h4e-Vj-rtF">
+            <objects>
+                <viewController id="dMl-Qs-7jO" customClass="CatDetailViewController" customModule="RandomCatGif" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hm0-C0-XoE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peP-LD-e8N" userLabel="CatGifDetail" customClass="CustomAnimatedImageView" customModule="RandomCatGif" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ei6-0s-die"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Name for the Cat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIa-Wq-Uot" userLabel="Lorem">
+                                <rect key="frame" x="20" y="236" width="202" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oIa-Wq-Uot" firstAttribute="top" secondItem="peP-LD-e8N" secondAttribute="bottom" constant="20" id="2cj-cI-9uH"/>
+                            <constraint firstItem="peP-LD-e8N" firstAttribute="leading" secondItem="j00-ej-IWF" secondAttribute="leading" id="6x1-ys-o2L"/>
+                            <constraint firstItem="peP-LD-e8N" firstAttribute="top" secondItem="j00-ej-IWF" secondAttribute="top" id="Csh-S9-po2"/>
+                            <constraint firstItem="oIa-Wq-Uot" firstAttribute="leading" secondItem="j00-ej-IWF" secondAttribute="leading" constant="20" id="WHL-jU-RU3"/>
+                            <constraint firstItem="j00-ej-IWF" firstAttribute="trailing" secondItem="oIa-Wq-Uot" secondAttribute="trailing" constant="192" id="WHy-Zd-Hn6"/>
+                            <constraint firstItem="j00-ej-IWF" firstAttribute="trailing" secondItem="peP-LD-e8N" secondAttribute="trailing" id="fIC-sc-sNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j00-ej-IWF"/>
+                    </view>
+                    <connections>
+                        <outlet property="catGif" destination="peP-LD-e8N" id="kw2-So-C5R"/>
+                        <outlet property="catLorem" destination="oIa-Wq-Uot" id="bFI-qA-0mi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2M-Xx-gU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4215.9420289855079" y="-443.30357142857139"/>
         </scene>
         <!--CatGif-->
         <scene sceneID="2oR-S5-TgC">

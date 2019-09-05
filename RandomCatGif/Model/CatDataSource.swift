@@ -37,8 +37,12 @@ class CatDataSource: NSObject, UITableViewDataSource {
         cell.catID.text = cat.id
         cell.catName.text = Constants.catNames.randomElement() ?? "N/A"
         cell.url = cat.url
+        cell.cat = cat
         return cell
     }
+    
+    
+    
     
     
 }

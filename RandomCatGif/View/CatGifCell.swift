@@ -11,6 +11,7 @@ import UIKit
 class CatGifCell: UITableViewCell {
 
     // MARK: - Properties
+    var cat: Cat?
     var url = String() {
         didSet {
             loadGifAnimation()

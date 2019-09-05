@@ -25,6 +25,20 @@ class CatGifViewController: UITableViewController {
         tableView.dataSource = dataSource
 
     }
+    
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ToCatDetailVC") {
+            guard let catCell = sender as? CatGifCell else { return }
+            guard let destination = segue.destination as? CatDetailViewController else { return }
+            guard let cat = catCell.cat else { return }
+            destination.cat = cat
+        }
+        
+        
+    }
 
 
 }
