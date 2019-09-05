@@ -19,8 +19,6 @@ class CatGifCell: UITableViewCell {
     }
 
     // MARK: - Outlets
-    /// - Warning: Need to look up the way to display GIF safely
-    /// is an ImageView the right way?
     
     @IBOutlet weak var catGif: CustomAnimatedImageView!
     @IBOutlet weak var catName: UILabel! // Not defined yet

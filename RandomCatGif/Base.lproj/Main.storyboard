@@ -91,8 +91,8 @@
                                     <constraint firstAttribute="height" constant="128" id="Ei6-0s-die"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Name for the Cat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIa-Wq-Uot" userLabel="Lorem">
-                                <rect key="frame" x="20" y="236" width="202" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIa-Wq-Uot" userLabel="Lorem">
+                                <rect key="frame" x="20" y="236" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                             <constraint firstItem="peP-LD-e8N" firstAttribute="leading" secondItem="j00-ej-IWF" secondAttribute="leading" id="6x1-ys-o2L"/>
                             <constraint firstItem="peP-LD-e8N" firstAttribute="top" secondItem="j00-ej-IWF" secondAttribute="top" id="Csh-S9-po2"/>
                             <constraint firstItem="oIa-Wq-Uot" firstAttribute="leading" secondItem="j00-ej-IWF" secondAttribute="leading" constant="20" id="WHL-jU-RU3"/>
-                            <constraint firstItem="j00-ej-IWF" firstAttribute="trailing" secondItem="oIa-Wq-Uot" secondAttribute="trailing" constant="192" id="WHy-Zd-Hn6"/>
+                            <constraint firstItem="j00-ej-IWF" firstAttribute="trailing" secondItem="oIa-Wq-Uot" secondAttribute="trailing" constant="20" id="WHy-Zd-Hn6"/>
                             <constraint firstItem="j00-ej-IWF" firstAttribute="trailing" secondItem="peP-LD-e8N" secondAttribute="trailing" id="fIC-sc-sNh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j00-ej-IWF"/>
@@ -112,6 +112,7 @@
                     <connections>
                         <outlet property="catGif" destination="peP-LD-e8N" id="kw2-So-C5R"/>
                         <outlet property="catLorem" destination="oIa-Wq-Uot" id="bFI-qA-0mi"/>
+                        <outlet property="imageHeight" destination="Ei6-0s-die" id="TeT-F6-Eq5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2M-Xx-gU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
