@@ -21,6 +21,8 @@
 		A73D27D72321045E009B0CE4 /* CatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D62321045E009B0CE4 /* CatDataSource.swift */; };
 		A73D27D923210967009B0CE4 /* LoripsumAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27D823210967009B0CE4 /* LoripsumAPI.swift */; };
 		A73D27DB23211CB1009B0CE4 /* CatGifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DA23211CB1009B0CE4 /* CatGifCell.swift */; };
+		A73D27DE23212714009B0CE4 /* UIImage-Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DD23212714009B0CE4 /* UIImage-Gif.swift */; };
+		A73D27E023212E95009B0CE4 /* CustomAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A73D27D62321045E009B0CE4 /* CatDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDataSource.swift; sourceTree = "<group>"; };
 		A73D27D823210967009B0CE4 /* LoripsumAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoripsumAPI.swift; sourceTree = "<group>"; };
 		A73D27DA23211CB1009B0CE4 /* CatGifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGifCell.swift; sourceTree = "<group>"; };
+		A73D27DD23212714009B0CE4 /* UIImage-Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Gif.swift"; sourceTree = "<group>"; };
+		A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				A73D27C92320EBE5009B0CE4 /* View */,
 				A73D27CA2320EBF2009B0CE4 /* Controller */,
 				A73D27AB2320EB6F009B0CE4 /* Main.storyboard */,
+				A73D27DC232126ED009B0CE4 /* Source */,
 				A73D27C72320EB8E009B0CE4 /* Supporting Files */,
 			);
 			path = RandomCatGif;
@@ -156,8 +161,17 @@
 			isa = PBXGroup;
 			children = (
 				A73D27CE2320F8C6009B0CE4 /* JSONDecoder-Extension.swift */,
+				A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A73D27DC232126ED009B0CE4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A73D27DD23212714009B0CE4 /* UIImage-Gif.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +279,10 @@
 				A73D27D523210187009B0CE4 /* Breed.swift in Sources */,
 				A73D27AA2320EB6F009B0CE4 /* CatGifViewController.swift in Sources */,
 				A73D27D12320FD11009B0CE4 /* Cat.swift in Sources */,
+				A73D27E023212E95009B0CE4 /* CustomAnimatedImageView.swift in Sources */,
 				A73D27CC2320EEFF009B0CE4 /* TheCatAPI.swift in Sources */,
 				A73D27D72321045E009B0CE4 /* CatDataSource.swift in Sources */,
+				A73D27DE23212714009B0CE4 /* UIImage-Gif.swift in Sources */,
 				A73D27A82320EB6F009B0CE4 /* AppDelegate.swift in Sources */,
 				A73D27D32320FE73009B0CE4 /* Category.swift in Sources */,
 				A73D27D923210967009B0CE4 /* LoripsumAPI.swift in Sources */,

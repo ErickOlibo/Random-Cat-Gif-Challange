@@ -25,7 +25,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_img" translatesAutoresizingMaskIntoConstraints="NO" id="D4v-Of-waJ" userLabel="CatThumbnail">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_img" translatesAutoresizingMaskIntoConstraints="NO" id="D4v-Of-waJ" userLabel="CatThumbnail" customClass="CustomAnimatedImageView" customModule="RandomCatGif" customModuleProvider="target">
                                             <rect key="frame" x="10" y="10" width="80" height="80"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="80" id="DBB-Wo-dja"/>
@@ -58,7 +58,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="catGif" destination="D4v-Of-waJ" id="h2m-H8-o2p"/>
+                                    <outlet property="catGif" destination="D4v-Of-waJ" id="b6G-jt-nsH"/>
                                     <outlet property="catID" destination="erT-Cg-ggc" id="iF0-DC-Ijq"/>
                                     <outlet property="catName" destination="26Y-fX-8Dz" id="cVO-z8-kvE"/>
                                 </connections>
