@@ -16,5 +16,7 @@ struct Cat: Codable {
     let id: String
     let url: String
     let categories: [Category]?
-    
+    let name: String = {
+        return Constants.catNames.randomElement() ?? "UnNamed"
+    }()
 }

@@ -32,6 +32,7 @@ public class LoripsumAPI {
                 
                 
                 DispatchQueue.main.async {
+                    // ** From Split to String.Element to String ** //
                     let lorems = contents.split { $0.isNewline }.map { String($0) }
                     completion(lorems)
                 }

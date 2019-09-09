@@ -29,6 +29,7 @@ class CustomAnimatedImageView: UIImageView {
                 return
             }
             
+            // External data
             let loadedGif = UIImage.gif(data: data!)
             DispatchQueue.main.async {
                 if self.imageURL == url {

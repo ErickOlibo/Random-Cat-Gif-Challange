@@ -11,7 +11,12 @@ import UIKit
 class CatGifCell: UITableViewCell {
 
     // MARK: - Properties
-    var cat: Cat?
+    var cat: Cat? {
+        didSet {
+            setupCell()
+            print("CAT was set")
+        }
+    }
     var url = String() {
         didSet {
             loadGifAnimation()
@@ -24,6 +29,16 @@ class CatGifCell: UITableViewCell {
     @IBOutlet weak var catName: UILabel! // Not defined yet
     @IBOutlet weak var catID: UILabel!
     
+    
+    // Private Methods
+    private func setupCell() {
+        guard let cat = cat else { return }
+        guard let catURL = URL(string: cat.url) else { return }
+        catGif.loadGifUsing(catURL)
+        catName.text = cat.name
+        catID.text = cat.id
+        
+    }
     
     private func loadGifAnimation() {
         guard let catURL = URL(string: url) else {
