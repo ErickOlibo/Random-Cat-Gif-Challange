@@ -25,6 +25,7 @@
 		A73D27E023212E95009B0CE4 /* CustomAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */; };
 		A73D27E223213BE3009B0CE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27E123213BE3009B0CE4 /* Constants.swift */; };
 		A73D27E423213E6E009B0CE4 /* CatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73D27E323213E6E009B0CE4 /* CatDetailViewController.swift */; };
+		A7C8A53223916EA900BD247D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7C8A53123916EA900BD247D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A73D27DF23212E95009B0CE4 /* CustomAnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatedImageView.swift; sourceTree = "<group>"; };
 		A73D27E123213BE3009B0CE4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A73D27E323213E6E009B0CE4 /* CatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailViewController.swift; sourceTree = "<group>"; };
+		A7C8A53123916EA900BD247D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				A73D27CA2320EBF2009B0CE4 /* Controller */,
 				A73D27AB2320EB6F009B0CE4 /* Main.storyboard */,
 				A73D27DC232126ED009B0CE4 /* Source */,
+				A7C8A53123916EA900BD247D /* README.md */,
 				A73D27C72320EB8E009B0CE4 /* Supporting Files */,
 			);
 			path = RandomCatGif;
@@ -263,6 +266,7 @@
 			files = (
 				A73D27B22320EB6F009B0CE4 /* LaunchScreen.storyboard in Resources */,
 				A73D27AF2320EB6F009B0CE4 /* Assets.xcassets in Resources */,
+				A7C8A53223916EA900BD247D /* README.md in Resources */,
 				A73D27AD2320EB6F009B0CE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
